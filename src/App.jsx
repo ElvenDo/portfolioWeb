@@ -1,6 +1,7 @@
 import LogoED from './assets/LogoED.svg'
 import imageSub from './assets/AdobeStock_968627268.jpeg'
 import './scss/App.scss'
+import Header from './components/Header'
 import logoInstagram from './assets/icons/instagram.svg'
 import logoGithub from './assets/icons/github.svg'
 import logoLinkedin from './assets/icons/linkedin.svg'
@@ -24,6 +25,7 @@ const JobTyping = () => {
 export default function App() {
   return (
     <>
+      <Header />
       <section>
         <div className="h2-section">
           <h2>Je suis <span>Doher Elven</span></h2>
@@ -43,7 +45,7 @@ export default function App() {
         </div>
       </section>
       <section>
-        <div className="about-section">
+        <div className="about-section" id ="apropos">
           <div className="title">
             <h1>A propos</h1>
             <div className="trait">

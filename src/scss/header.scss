@@ -16,6 +16,9 @@ img {
 }
 
 header {
+    top: 0;
+    z-index: 1000;
+    position: sticky;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -51,7 +54,7 @@ header {
 }
 #hover {
     border-radius: 100px;
-    background-color: $background-color;
+    background-color: rgba(255, 255, 255, 0);
     height: 3px;
     width: 100%;
 }
