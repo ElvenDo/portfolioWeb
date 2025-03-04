@@ -1,43 +1,118 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  border:2px solid #61dafbaa;
-  text-align: center;
-}
+$background-color: #fdfdfd;
+$text-color: #020008;
+$blue-color: #0066ff;
+$gold-color: #e3c39d;
+$H1-font-size: 3em;
+$H2-font-size: 2em;
+$H3-font-size: 1.5em;
+$card-describtion-font-size: 1.5em;
+$paragraph-font-size: 1.5em;
+$nav-font-size: 1.25em;
+$title-font: "Madimi one";
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+* {
+  scroll-behavior: smooth;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
+section {
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 24px;
+  height: 90vh;
+  .h2-section {
+    grid-column: 2 / span 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+    h2 {
+      font-family: $title-font;
+      font-size: 3.5em;
+      color: $text-color;
+      margin: 0;
+      grid-column: span 5;
+
+      span {
+        color: $blue-color;
+      }
+    }
+    .reseau{
+      margin-top: 24px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .trait1{
+        margin-top: 3px;
+        border-radius: 20px;
+        background-color: $blue-color;
+        height: 6px;
+        width: 40%;
+        }
+        .buttonReseau{
+          display: flex;
+          z-index: 1;
+          flex-direction: row;
+          gap:20px;
+          margin-left: -5px;
+          margin-right: -5px;
+          a{
+            border-radius: 100%;
+            background: #FFF;
+            padding: 10px;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+              width: 30px;
+              height: 30px;
+            }
+          }
+        }
+        .trait2{
+          margin-top: 3px;
+          border-radius: 20px;
+          background-color: $blue-color;
+          height: 6px;
+          width: 5%;
+          z-index: 0;
+          }
+    }
   }
-  to {
-    transform: rotate(360deg);
+
+  .img-section {
+    grid-column: 8 / span 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+.about-section{
+  grid-column: span 12;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid $blue-color;
+  padding: 0;
+  margin: 0;
+  h1{
+    font-family: $title-font;
+    font-size: $H1-font-size;
+    color: $blue-color;
+    margin: 0;
   }
-}
-
-.card {
-  padding: 2em;
-}s
-
-.read-the-docs {
-  color: #888;
+  .trait{
+    border-radius: 20px;
+    background-color: $gold-color;
+    height: 6px;
+    margin-left: 50%;
+    width: 50%;
+  }
 }
