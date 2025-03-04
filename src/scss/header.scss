@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Madimi+One&family=Monomakh&display=swap");
+$background-color: #fdfdfd;
+$text-color: #020008;
+$blue-color: #0066ff;
+$gold-color: #e3c39d;
+$H1-font-size: 4em;
+$H2-font-size: 3.5em;
+$H3-font-size: 3em;
+$card-describtion-font-size: 1.5em;
+$paragraph-font-size: 1.5em;
+$nav-font-size: 1.25em;
+$nav-font: "Madimi one";
+
+img {
+    height: 70%;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100vw - 2 * 80px);
+    height: 8vh;
+    background: rgba(255, 255, 255, 0.20);
+    backdrop-filter: blur(7px);
+    nav {
+        ul {
+            display: flex;
+            flex-direction: row;
+            gap: 50px;
+            margin: 0;
+        }
+        li {
+            list-style-type: none;
+            padding: 10px;
+            &:hover {
+                #hoover {
+                    background-color: $blue-color;
+                }   
+            }
+        }
+        a {
+            text-decoration: none;
+            color: $blue-color;
+            font-family: $nav-font;
+            font-size: $nav-font-size;
+        }
+    }
+}
+#hoover {
+    border-radius: 100px;
+    background-color: $background-color;
+    height: 3px;
+    width: 100%;
+}
