@@ -6,10 +6,6 @@ $paragraph-font-size: 1.5em;
 
 
 :root{
-  max-width: calc(100% - 2 * 80px);
-  display: grid;
-  grid-template-columns: repeat(24, 1fr);
-  gap: 24px;
   margin: 0;
   padding: 0 80px;
   background-color: $background-color;

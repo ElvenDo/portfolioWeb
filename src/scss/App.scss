@@ -17,12 +17,28 @@ html {
   scrollbar-color: $blue-color $background-color;
 }
 
+.title {
+  padding-top: 60px;
+  padding-bottom: 76px;
+  h1 {
+    font-family: $title-font;
+    font-size: $H1-font-size;
+    color: $blue-color;
+    margin: 0;
+  }
+  .trait {
+    border-radius: 20px;
+    background-color: $gold-color;
+    height: 6px;
+    margin-left: 40%;
+    width: 60%;
+  }
+}
 section {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 24px;
   min-height: 90vh;
-  border: 1px solid yellow;
 
   .h2-section {
     grid-column: 2 / span 5;
@@ -88,14 +104,13 @@ section {
   }
 
   .img-section {
-    grid-column: 8 / span 4;
+    grid-column: 7 / span 6;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
     img {
       width: 100%;
-      height: auto;
     }
   }
   .skill-section {
@@ -103,23 +118,6 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    .title {
-      padding-top: 60px;
-      padding-bottom: 76px;
-      h1 {
-        font-family: $title-font;
-        font-size: $H1-font-size;
-        color: $blue-color;
-        margin: 0;
-      }
-      .trait {
-        border-radius: 20px;
-        background-color: $gold-color;
-        height: 6px;
-        margin-left: 40%;
-        width: 60%;
-      }
-    }
     .container {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
@@ -135,20 +133,19 @@ section {
         left: 0;
       }
       .titreH2 {
-        padding-top: 85px;
-        grid-column: 2 / span 4;
+        padding-top: 102px;
+        grid-column: 2 / span 8;
         font-family: $title-font;
         font-size: $H3-font-size;
-
         .traitbleu {
           border-radius: 20px;
           background-color: $blue-color;
           height: 6px;
-          width: 70%;
+          width: 35%;
         }
       }
       .skill-row {
-        max-width:100%;
+        max-width: 100%;
         display: flex;
         justify-content: center;
         gap: 30px;
@@ -167,10 +164,11 @@ section {
       .skill-gen {
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
         justify-content: center;
         gap: 45px;
         height: 60px;
-        padding-bottom: 85px;
+        padding-bottom: 102px;
 
         grid-column: span 12;
         p {
@@ -193,30 +191,14 @@ section {
     flex-direction: column;
     align-items: center;
     margin: 0;
-    .title {
-      padding-top: 60px;
-      padding-bottom: 76px;
-      h1 {
-        font-family: $title-font;
-        font-size: $H1-font-size;
-        color: $blue-color;
-        margin: 0;
-      }
-      .trait {
-        border-radius: 20px;
-        background-color: $gold-color;
-        height: 6px;
-        margin-left: 40%;
-        width: 60%;
-      }
-    }
-
     .contenu-section {
+      grid-column: span 12;
       display: grid;
-      height: 100%;
       grid-template-columns: repeat(12, 1fr);
+      gap: 24px;      
+      height: 100%;
       p {
-        grid-column: span 6;
+        grid-column: 1 / span 6;
         font-size: $paragraph-font-size;
         font-family: $paragraph-font;
         font-weight: regular;
@@ -229,7 +211,7 @@ section {
         display: flex;
         justify-content: space-between;
         position: relative;
-        height: 100%;
+        width: 100%;
         .fond {
           height: auto;
         }
@@ -259,13 +241,108 @@ section {
       }
     }
   }
-  .project-section{
+  .project-section {
     grid-column: span 12;
-    .cardContainer{
-      border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    .container {
+      width: 100%;
+      gap: 48px;
+      position: relative;
+      .fond {
+        height: auto;
+      }
+      #haut {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      .cardContainer {
+        box-sizing: border-box;
+        padding: 50px 0;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+      }
+      #bas {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+      }
+    }
+  }
+  .contact-section {
+    grid-column: span 12;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+  .container {
+    width: 100%;
+    gap: 48px;
+    position: relative;
+  }
+  .fond {
+    height: auto;
+  }
+  #haut {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .all {
+    padding: 55px 55px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 90px;
+    .infoContainer {
       display: flex;
       justify-content: center;
-      gap:30px;
+      gap: 30px;
+      .info {
+        display: flex;
+        padding: 10px;
+        flex:1;
+        align-items: center;
+        border-radius: 15px;
+        border: 3px solid $gold-color;
+        p {
+          width: 100%;
+          color: $text-color;
+          font-family: $paragraph-font;
+          font-size: $paragraph-font-size;
+          font-weight: normal;
+        }
+      }
     }
+    a {
+      padding: 10px 20px;
+      gap: 10px;
+      text-decoration: none;
+      background-color: $blue-color;
+      border-radius: 15px;
+      color: $background-color;
+      font-family: $paragraph-font;
+      font-size: $paragraph-font-size;
+      border:3px solid $background-color;
+      transition: 0.1s;
+
+      &:hover{
+        border:3px solid $blue-color;
+        background-color: $background-color;
+        color:$blue-color;
+      }
+    }
+  }
+
+  #bas {
+    position: absolute;
+    right: 0;
+    bottom: 0;
   }
 }

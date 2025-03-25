@@ -1,25 +1,27 @@
 import '../scss/projectcard.scss';
+import { Link } from 'react-router-dom'
 
-export default function projectcard({ image, tag, title, description }) {
+export default function Projectcard({ slug, image, tag, title, description }) {
     return (
-        <div className="card">
-            <div className="imageWrapper">
-                <img src={image} alt="imageProjet" />
-            </div>
-            <span>
-                <div className="tagContainer">
-                    <div className="tagContainer">
-                        {tag.map((tags, index) => (
-                            <span key={index} className={`tag tag-${tags.toLowerCase()}`}>
-                                {tags}
-                            </span>
-                        ))}
-                    </div>
+        <Link to={`/projets/${slug}`} className='cardLink'>
+            <div className="card">
+                <div className="imageWrapper">
+                    <img src={image} alt="imageProjet" />
                 </div>
-                <p id="title">{title}</p>
-                <p id="description">{description}</p>
-            </span>
-
-        </div>
+                <span>
+                    <div className="tagContainer">
+                        <div className="tagContainer">
+                            {tag.map((tags, index) => (
+                                <span key={index} className={`tag tag-${tags.toLowerCase()}`}>
+                                    {tags}
+                                </span>
+                            ))}
+                        </div>
+                    </div>
+                    <p id="title">{title}</p>
+                    <p id="description">{description}</p>
+                </span>
+            </div>
+        </Link>
     )
 }

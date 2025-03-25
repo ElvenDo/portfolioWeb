@@ -1,4 +1,4 @@
-import imageSub from './assets/AdobeStock_968627268.jpeg'
+import imageHome from './assets/ImageHome.svg'
 import './scss/App.scss'
 import imageMoi from './assets/MoiImage.jpg'
 import Header from './components/Header'
@@ -12,14 +12,15 @@ import coinBas from './assets/coinBasDroit.svg'
 import data from './data/skill.js'
 import ProjectCard from './components/projectCard.jsx'
 import projectData from './data/project.js'
+import Footer from './components/footer.jsx'
 const JobTyping = () => {
   return (
     <TypeAnimation
       sequence={[
-        'Un Ux/Ui designer', 2000,
-        'Un Développeur', 2000,
-        'Un WebDesigner', 2000,
-        'Un Graphiste', 2000
+        'Un Ux/Ui designer', 3000,
+        'Un Développeur', 3000,
+        'Un WebDesigner', 3000,
+        'Un Graphiste', 3000
       ]}
       wrapper="h2"
       speed={50}
@@ -46,7 +47,7 @@ export default function App() {
           </div>
         </div>
         <div className="img-section">
-          <img src={imageSub} alt="" />
+          <img src={imageHome} alt="" />
         </div>
       </section>
       <section>
@@ -98,7 +99,7 @@ export default function App() {
             <div className="trait"></div>
           </div>
           <div className="contenu-section">
-            <p>Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor, augue nec tincidunt molestie, massa nunc varius arcu, at scelerisque elit erat a magna. Donec quis erat at libero ultrices mollis. In hac habitasse platea dictumst. Vivamus vehicula leo dui, at porta nisi facilisis finibus. In euismod augue vitae nisi ultricies, non aliquet urna tincidunt. Integer in nisi eget nulla commodo faucibus efficitur quis massa. Praesent felis est, finibus et nisi ac, hendrerit venenatis libero. Donec consectetur faucibus ipsum id gravida.</p>
+            <p>Je suis passionné par <b>l’UX/UI design</b>, le <b>graphisme</b> et le <b>développement web</b>. J’aime concevoir des interfaces à la fois esthétiques et intuitives, en mettant l’accent sur l’expérience utilisateur et la fluidité de navigation. Grâce à mes notions en <b>web design</b>, je transforme des idées en créations visuelles percutantes, tout en intégrant les meilleures pratiques du <b>développement web</b>. Toujours en quête d’innovation, j’explore les tendances et les outils actuels pour proposer des solutions numériques adaptées et impactantes.</p>
             <div className="section-image">
               <img src={coinHaut} className="fond" id="haut" alt="" />
               <div className="imageWrapper">
@@ -112,12 +113,46 @@ export default function App() {
       </section >
       <section>
         <div className="project-section" id="projets">
+          <div className="title">
+            <h1>Mes Projets</h1>
+            <div className="trait"></div>
+          </div>
+          <div className="container">
+            <img src={coinHaut} className="fond" id="haut" alt="" />
             <div className="cardContainer">{projectData.map((project, index) => (
-              <ProjectCard key={index} image={project.image} tag={project.tag} title={project.title} description={project.description} />
+              <ProjectCard key={index} slug={project.slug} image={project.image} tag={project.tag} title={project.title} description={project.description} />
             ))}</div>
+            <img src={coinBas} className="fond" id="bas" alt="" />
+          </div>
         </div>
       </section>
-
+      <section>
+        <div className="contact-section" id="contact">
+          <div className="title">
+            <h1>Me Contacter</h1>
+            <div className="trait"></div>
+          </div>
+          <div className="container">
+            <img src={coinHaut} className="fond" id="haut" alt="" />
+            <span class="all">
+              <div className="infoContainer">
+                <div className="info">
+                  <p className="infoParagraph">N’hésitez pas à me contacter si vous avez des questions sur mon parcours ou mes projets.</p>
+                </div>
+                <div className="info">
+                  <p className="infoParagraph">Si vous souhaitez que je vous aide sur un projet ou que je vous apporte un regard constructif, je serai ravi d’échanger avec vous.</p>
+                </div>
+                <div className="info">
+                  <p className="infoParagraph">Si mes compétences vous intéressent et que je peux les mettre en œuvre au sein de votre entreprise, n’hésitez pas à me contacter.</p>
+                </div>
+              </div>
+              <a href="mailto:elvendoher38@gmail.com?subject=(Contact Portfolio) **votre objet ici**" className="button">Envoyer un message</a>
+            </span>
+            <img src={coinBas} className="fond" id="bas" alt="" />
+          </div>
+        </div>
+      </section>
+      <Footer />
     </>
   )
 }
