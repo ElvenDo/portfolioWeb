@@ -13,9 +13,9 @@ export default function Footer() {
                     <p>Elven Doher</p>
                 </div>
                 <div className="socialContainer">
-                    <img src={linkedinIcon} alt="linkedinIcon" />
-                    <img src={instaIcon} alt="iconInsta" />
-                    <img src={gitIcon} alt="gitHubicon" />
+                    <a href='https://www.linkedin.com/in/elven-doher/' target='_blank'><img src={linkedinIcon}></img></a>
+                    <a href='https://www.instagram.com/elven.dhr?igsh=Z2x1NmVmNzNtMWpq' target='_blank'><img src={instaIcon}></img></a>
+                    <a href='https://github.com/ElvenDo' target='_blank'><img src={gitIcon}></img></a>
                 </div>
             </div>
         </footer>
