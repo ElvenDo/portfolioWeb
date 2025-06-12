@@ -52,9 +52,9 @@ export default function Projet() {
                             <div className="trait"></div>
                         </div>
                         <div className="iconContainer">
-                            {project.tag.map((tag, index) => (
-                                <img key={index} src={tagToIcon[tag]} alt={tag} className="icon" />
-                            ))}
+                        {project.tag && project.tag.map(tag => (
+  <img key={tag} src={tagToIcon[tag]} alt={tag} />
+))}
                         </div>
                         <a className="pdf" href={project.projet1} target="_blank" rel="noopener noreferrer">
                             Voir le projet
