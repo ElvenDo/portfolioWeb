@@ -2,6 +2,7 @@ import imageHome from './assets/imageHome.svg'
 import './scss/App.scss'
 import imageMoi from './assets/MoiImage.jpg'
 import Header from './components/header.jsx'
+import Footer from '../components/footer.jsx'
 import SkillsCard from './components/skillscard.jsx'
 import logoInstagram from './assets/icons/instagram.svg'
 import logoGithub from './assets/icons/github.svg'
@@ -12,7 +13,6 @@ import coinBas from './assets/coinBasDroit.svg'
 import data from './data/skill.js'
 import ProjectCard from './components/projectCard.jsx'
 import projectData from './data/project.js'
-import Footer from './components/Footer'
 
 const JobTyping = () => {
   return (

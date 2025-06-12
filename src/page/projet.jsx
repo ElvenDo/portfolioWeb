@@ -3,7 +3,6 @@ import { useEffect } from 'react';
 
 import { Link, useParams, Navigate } from 'react-router-dom'
 import content from '../data/content'
-import Footer from '../components/Footer'
 import LogoED from '../assets/LogoED.svg'
 import cssIcon from '../assets/icons/css.svg'
 import figmaIcon from '../assets/icons/figma.svg'
