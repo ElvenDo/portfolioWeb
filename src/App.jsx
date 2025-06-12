@@ -1,7 +1,7 @@
 import imageHome from './assets/imageHome.svg'
 import './scss/App.scss'
 import imageMoi from './assets/MoiImage.jpg'
-import Header from './components/Header'
+import Header from './components/Header.jsx'
 import Footer from './components/Footer.jsx'
 import SkillsCard from './components/Skillscard.jsx'
 import logoInstagram from './assets/icons/instagram.svg'
