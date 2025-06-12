@@ -4,11 +4,11 @@ import { useEffect } from 'react';
 import { Link, useParams, Navigate } from 'react-router-dom'
 import content from '../data/content'
 import LogoED from '../assets/LogoED.svg'
-const cssIcon = new URL('../assets/icons/css.svg', import.meta.url).href;
-const figmaIcon = new URL('../assets/icons/figma.svg', import.meta.url).href;
-const illustratorIcon = new URL('../assets/icons/illustrator.svg', import.meta.url).href;
-const photoshopIcon = new URL('../assets/icons/photoshop.svg', import.meta.url).href;
-const afterEffectIcon = new URL('../assets/icons/afterEffect.svg', import.meta.url).href;
+import cssIcon from '../assets/icons/css.svg';
+import figmaIcon from '../assets/icons/figma.svg';
+import illustratorIcon from '../assets/icons/illustrator.svg';
+import photoshopIcon from '../assets/icons/photoshop.svg';
+import afterEffectIcon from '../assets/icons/afterEffect.svg';
 import coinHaut from '../assets/coinHautDroit.svg'
 import coinBas from '../assets/coinBasGauche.svg'
 import Footer from '../components/Footer.jsx';
