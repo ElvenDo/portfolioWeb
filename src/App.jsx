@@ -1,4 +1,4 @@
-import imageHome from './assets/ImageHome.svg'
+import imageHome from './assets/imageHome.svg'
 import './scss/App.scss'
 import imageMoi from './assets/MoiImage.jpg'
 import Header from './components/Header'
