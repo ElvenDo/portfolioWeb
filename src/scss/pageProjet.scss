@@ -1,0 +1,176 @@
+@use "./_variable.scss" as *;
+html {
+    animation: fadeIn 800ms ease-in;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: $blue-color $background-color;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+header {
+    top: 0;
+    z-index: 1000;
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100vw - 2 * 80px);
+    height: 8vh;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(7px);
+    p {
+        color: $blue-color;
+        font-family: $nav-font;
+        font-size: $nav-font-size;
+    }
+    .link {
+        text-decoration: none;
+        color: $blue-color;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+main {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 24px;
+    .linkbuton {
+        margin-top: 60px;
+        background-color: $gold-color;
+        border-radius: 15px;
+        border: 4px solid $gold-color;
+        padding: 5px 10px;
+        font-weight: 700;
+        width: 100%;
+        text-align: center;
+        font-size: 1.2em;
+        font-family: $paragraph-font;
+        text-decoration: none;
+        color: $text-color;
+        &:hover {
+            background-color: $background-color;
+            border-color: 4px solid $gold-color;
+        }
+    }
+    .titleContainer {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        align-items: start;
+        grid-column: span 12;
+        .imgContainer {
+            z-index: 1;
+            grid-column: 1 / span 8;
+            width: 100%;
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        .title {
+            margin-left: -124px;
+            grid-column: 9 / span 3;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            .trait {
+                float: right;
+                width: 55%;
+            }
+            .iconContainer {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap:10px;
+                img {
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+            a {
+                background-color: $gold-color;
+                border-radius: 15px;
+                border: 4px solid $gold-color;
+                padding: 5px 10px;
+                font-weight: 700;
+                font-size: 1.2em;
+                font-family: $paragraph-font;
+                text-decoration: none;
+                color: $text-color;
+                display: inline-block; // Empêche le lien de s'étendre au-delà de son contenu
+                &:hover {
+                    background-color: $background-color;
+                    border-color: 4px solid $gold-color;
+                }
+            }
+        }
+    }
+    p {
+        grid-column: span 12;
+        font-size: $paragraph-font-size;
+        font-family: $paragraph-font;
+        font-weight: 400;
+        text-align: justify;
+        overflow: break-word;
+        box-sizing: border-box;
+        text-align: center;
+        word-wrap: break-word;
+    }
+    .container2 {
+        margin-top: 100px;
+        grid-column: span 12;
+        display: flex;
+        align-items: center;
+        gap: 60px;
+        justify-content: space-between;
+        p {
+            font-size: $paragraph-font-size;
+            font-family: $paragraph-font;
+            font-weight: 400;
+            text-align: justify;
+            width: 100%;
+        }
+        .imageContainer {
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            .fond {
+                height: auto;
+            }
+            #haut {
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+            .imgWrapper {
+                overflow: hidden;
+                width: 100%;
+                img {
+                    border-radius: 15px;
+                    margin-left: 32px;
+                    margin-top: 32px;
+                    width: calc(100% - 64px);
+                    height: calc(100% - 64px);
+                    object-fit: fill;
+                }
+            }
+            #bas {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }
+        }
+    }
+}

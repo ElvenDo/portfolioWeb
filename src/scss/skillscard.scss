@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&family=Madimi+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.skill-card {
+    box-sizing: border-box;
+    display: flex;
+    width: 150px;
+    height: 155px;
+    padding: 20px;
+    gap: 5px;
+    flex-direction: column;
+    align-items: center;
+    p{
+        width: 100%;
+        text-align: center;
+        font-family: 'Alkatra';
+        font-weight: bold;
+        font-size: 1.5em;
+        color: #0066FF;
+    }
+    
+}

@@ -1,7 +1,7 @@
-$background-color: #fdfdfd;
+$background-color: #FDFDFD;
 $text-color: #020008;
-$blue-color: 0066FF;
-$gold-color: E3C39D;
+$blue-color:0066FF;
+$gold-color:E3C39D;
 $H1-font-size: 4em;
 $H2-font-size: 3.5em;
 $H3-font-size: 3em;
@@ -12,13 +12,22 @@ $gutter: 24px;
 $margin: 80px;
 $text-font: "Madimi One";
 
-:root {
+
+:root{
   background-color: $background-color;
   color: $text-color;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+
+}
+
+body{
+  margin: 0;
+  padding: 0;
+
 }
 #root {
   display: grid;

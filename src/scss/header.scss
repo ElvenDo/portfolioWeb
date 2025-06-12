@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Madimi+One&family=Monomakh&display=swap");
 $background-color: #fdfdfd;
 $text-color: #020008;
 $blue-color: #0066ff;
@@ -16,13 +15,16 @@ img {
 }
 
 header {
+    top: 0;
+    z-index: 1000;
+    position: sticky;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: calc(100vw - 2 * 80px);
     height: 8vh;
-    background: rgba(255, 255, 255, 0.20);
+    background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(7px);
     nav {
         ul {
@@ -35,9 +37,10 @@ header {
             list-style-type: none;
             padding: 10px;
             &:hover {
-                #hoover {
+                #hover {
+                    transition: 200ms ease-in;
                     background-color: $blue-color;
-                }   
+                }
             }
         }
         a {
@@ -48,9 +51,9 @@ header {
         }
     }
 }
-#hoover {
+#hover {
     border-radius: 100px;
-    background-color: $background-color;
+    background-color: rgba(255, 255, 255, 0);
     height: 3px;
     width: 100%;
 }

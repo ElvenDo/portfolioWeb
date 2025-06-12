@@ -1,0 +1,14 @@
+@use "./_variable.scss" as *;
+.not-found {
+    text-align: center;
+    height: 100vh;
+    img {
+        width: 60%;
+    }
+        .retour {
+            text-decoration: none;
+            color: $blue-color;
+            font-family: $nav-font;
+            font-size: $nav-font-size;
+        }
+}

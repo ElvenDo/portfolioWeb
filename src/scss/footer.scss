@@ -1,0 +1,26 @@
+footer{
+    margin-top: 160px;
+    display: flex;
+    padding: 10px 10px;
+    justify-content: center;
+    align-items: center;
+    .container{
+        display:flex ;
+        gap: 16px;
+        flex-direction: column;
+        width: 30%;
+        .logoContainer{
+            text-align: center;
+            p{
+                font-family: 'Madimi One';
+                font-size: 1.2em;
+            }
+        }
+        .socialContainer{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+    }
+}
