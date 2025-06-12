@@ -1,19 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&family=Madimi+One&display=swap');
 $background-color: #FDFDFD;
 $text-color: #020008;
-$blue-color:0066FF;
-$gold-color:E3C39D;
-$H1-font-size: 4em;
-$H2-font-size: 3.5em;
-$H3-font-size: 3em;
 $card-describtion-font-size: 1.5em;
 $paragraph-font-size: 1.5em;
-$columns: 12;
-$gutter: 24px;
-$margin: 80px;
-$text-font: "Madimi One";
 
 
 :root{
+  margin: 0;
+  padding: 0 80px;
   background-color: $background-color;
   color: $text-color;
   font-synthesis: none;
@@ -28,14 +22,4 @@ body{
   margin: 0;
   padding: 0;
 
-}
-#root {
-  display: grid;
-  grid-template-columns: repeat($columns, 1fr);
-  gap: $gutter;
-  margin: 0 $margin;
-}
-body {
-  max-width: 100vw;
-  margin: 0;
 }
