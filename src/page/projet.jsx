@@ -11,6 +11,7 @@ import photoshopIcon from '../assets/icons/photoshop.svg'
 import afterEffectIcon from '../assets/icons/afterEffect.svg'
 import coinHaut from '../assets/coinHautDroit.svg'
 import coinBas from '../assets/coinBasGauche.svg'
+import Footer from '../components/Footer.jsx';
 export default function Projet() {
     const { slug } = useParams();
     const project = content.find((proj) => proj.slug === slug);
