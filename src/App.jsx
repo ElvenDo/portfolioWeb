@@ -21,7 +21,7 @@ const JobTyping = () => {
         'Un Ux/Ui designer', 3000,
         'Un Développeur', 3000,
         'Un WebDesigner', 3000,
-        'Un Graphiste', 3000
+        'Un Motion designer', 3000
       ]}
       wrapper="h2"
       speed={50}
@@ -33,7 +33,6 @@ export default function App() {
   return (
     <>
       <Header />
-      <main>
         <section className='home'>
           <div className="h2-section">
             <h2>Je suis <span>Doher Elven</span></h2>
@@ -101,7 +100,7 @@ export default function App() {
               <div className="trait"></div>
             </div>
             <div className="contenu-section">
-              <p>Je suis passionné par <b>l’UX/UI design</b>, le <b>graphisme</b> et le <b>développement web</b>. J’aime concevoir des interfaces à la fois esthétiques et intuitives, en mettant l’accent sur l’expérience utilisateur et la fluidité de navigation. Grâce à mes notions en <b>web design</b>, je transforme des idées en créations visuelles percutantes, tout en intégrant les meilleures pratiques du <b>développement web</b>. Toujours en quête d’innovation, j’explore les tendances et les outils actuels pour proposer des solutions numériques adaptées et impactantes.</p>
+              <p>Je suis passionné par <b>l’UX/UI design</b>, le <b>motion design / montage vidéo</b> et le <b>développement web</b>. J’aime concevoir des interfaces à la fois esthétiques et intuitives, en mettant l’accent sur l’expérience utilisateur et la fluidité de navigation. Grâce à mes notions en <b>web design</b>, je transforme des idées en créations visuelles percutantes, tout en intégrant les meilleures pratiques du <b>développement web</b>. Toujours en quête d’innovation, j’explore les tendances et les outils actuels pour proposer des solutions numériques adaptées et impactantes.</p>
               <div className="section-image">
                 <img src={coinHaut} className="fond" id="haut" alt="" />
                 <div className="imageWrapper">
@@ -123,7 +122,8 @@ export default function App() {
               <img src={coinHaut} className="fond" id="haut" alt="" />
               <div className="cardContainer">{projectData.map((project, index) => (
                 <ProjectCard key={index} slug={project.slug} image={project.image} tag={project.tag} title={project.title} description={project.description} />
-              ))}</div>
+              ))}
+              </div>
               <img src={coinBas} className="fond" id="bas" alt="" />
             </div>
           </div>
@@ -136,7 +136,7 @@ export default function App() {
             </div>
             <div className="container">
               <img src={coinHaut} className="fond" id="haut" alt="" />
-              <span class="all">
+              <span className="all">
                 <div className="infoContainer">
                   <div className="info">
                     <p className="infoParagraph">N’hésitez pas à me contacter si vous avez des questions sur mon parcours ou mes projets.</p>
@@ -154,7 +154,6 @@ export default function App() {
             </div>
           </div>
         </section>
-      </main>
       <Footer />
     </>
   )

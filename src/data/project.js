@@ -1,6 +1,6 @@
 import proj1 from '../assets/MockupVinyl.jpg'
 import proj2 from '../assets/RailBoost.svg'
-import proj3 from '../assets/George.svg'
+import proj3 from '../assets/George.jpg'
 import proj4 from '../assets/Slime.svg'
 import proj5 from '../assets/DataVisu.svg'
 import proj6 from '../assets/Spacer.svg'

@@ -12,9 +12,20 @@ $title-font: "Madimi one";
 $paragraph-font: "Alkatra";
 
 html {
+  animation: fadeIn 800ms ease-in;
   scroll-behavior: smooth;
   scrollbar-width: thin;
   scrollbar-color: $blue-color $background-color;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .title {
@@ -131,6 +142,7 @@ section {
         position: absolute;
         top: 0;
         left: 0;
+
       }
       .titreH2 {
         padding-top: 102px;
@@ -267,6 +279,7 @@ section {
         gap: 30px;
         flex-wrap: wrap;
       }
+  
       #bas {
         position: absolute;
         right: 0;
