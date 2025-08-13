@@ -5,4 +5,10 @@ import react from '@vitejs/plugin-react-swc'
 export default defineConfig({
   base: '/portfolioWeb/',
   plugins: [react()],
+  resolve: {
+    extensions: ['.js', '.jsx', '.ts', '.tsx', '.json', '.svg'],
+  },
+  build: {
+    outDir: 'dist',
+  }
 })
